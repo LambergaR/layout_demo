@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <SeekBar 
+        android:id="@+id/size" 
+
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
+        
+        android:layout_centerVertical="true"
+        
+        android:progress="100"
+        
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+    />
+    
+    <LinearLayout
+        android:id="@+id/top"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_above="@id/size"
+        
+        android:orientation="vertical"
+        
+        android:weightSum="6"
+    >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            
+            android:background="#F00"
+        />
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            
+            android:background="#0F0"
+        />
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            
+            android:background="#00F"
+        />
+    </LinearLayout>    
+    
+    <LinearLayout
+        android:id="@+id/bottom"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_below="@id/size"
+        
+        android:orientation="horizontal"
+        
+        android:weightSum="6"
+    >
+        <ImageView 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            
+            android:background="#00F"
+        />
+        <ImageView 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            
+            android:background="#0F0"
+        />
+        <ImageView 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            
+            android:background="#F00"
+        />
+    </LinearLayout>    
+    
+    
+</RelativeLayout>
